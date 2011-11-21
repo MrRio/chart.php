@@ -1,0 +1,6 @@
+chart.php
+
+A thin PHP wrapper to produce semantic bar charts. Based on code by
+Harry Roberts and Dan Bentley.
+
+http://dl.dropbox.com/u/2629908/sandbox/css-bar-chart/index.html
