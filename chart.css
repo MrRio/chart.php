@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    CONTENTS
+\*------------------------------------*/
+/*
+RESET
+SHARED
+MAIN
+TYPE
+CHART
+*/
+
+
+
+
+
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/*
+A more considered reset; more of a restart...
+*/
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,
+a,abbr,address,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strong,sub,sup,tt,var,
+b,u,i,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+}
+article,aside,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section{
+    display:block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+strong,b,mark{
+    font-weight:bold;
+    font-style:inherit;
+}
+em,i,cite,q,address,dfn,var{
+    font-style:italic;
+    font-weight:inherit;
+}
+abbr[title],dfn[title]{
+    cursor:help;
+    border-bottom:1px dotted;
+}
+ins{
+    border-bottom:1px solid;
+}
+a,u,ins{
+    text-decoration:none;
+}
+del,s{
+    text-decoration:line-through;
+}
+pre,code,samp,kbd{
+    font-family:monospace;
+}
+small{
+    font-size:0.75em;
+}
+img{
+    border:none;
+    font-style:italic;
+}
+input,
+select,option,optgroup,
+textarea{
+    font:inherit;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $SHARED
+\*------------------------------------*/
+h2,
+p,
+ul,
+.chart{
+    margin-bottom:24px;
+    margin-bottom:2rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+html{
+    font:0.75em/1.5 "Helvetica Neue", Arial, sans-serif;
+    padding:5%;
+    background-color:#fff;
+    color:#333;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $TYPE
+\*------------------------------------*/
+h1{
+    font-size:2em;
+}
+a{
+    color:#09f;
+}
+    a:hover{
+        text-decoration:underline;
+    }
+.share{
+    list-style:none;
+}
+    .share li{
+        display:inline;
+    }
+
+
+
+
+
+/*------------------------------------*\
+    $CHART
+\*------------------------------------*/
+.chart{
+    position:relative;
+    height:250px;
+    border:1px solid #999;
+    border-width:0 0 1px 1px;
+    background-color:#e4e4e4;
+    background-image:-moz-linear-gradient(top, #e4e4e4 0%, #e4e4e4 10%, #fff 10%, #fff 20%, #e4e4e4 20%, #e4e4e4 30%, #fff 30%, #fff 40%, #e4e4e4 40%, #e4e4e4 50%, #fff 50%, #fff 60%, #e4e4e4 60%, #e4e4e4 70%, #fff 70%, #fff 80%, #e4e4e4 80%, #e4e4e4 90%, #fff 90%, #fff 100%); /* FF3.6+ */
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4e4e4), color-stop(10%,#e4e4e4), color-stop(10%,#fff), color-stop(20%,#fff), color-stop(20%,#e4e4e4), color-stop(30%,#e4e4e4), color-stop(30%,#fff), color-stop(40%,#fff), color-stop(40%,#e4e4e4), color-stop(50%,#e4e4e4), color-stop(50%,#fff), color-stop(60%,#fff), color-stop(60%,#e4e4e4), color-stop(70%,#e4e4e4), color-stop(70%,#fff), color-stop(80%,#fff), color-stop(80%,#e4e4e4), color-stop(90%,#e4e4e4), color-stop(90%,#fff), color-stop(100%,#fff)); /* Chrome,Safari4+ */
+    background-image:-webkit-linear-gradient(top, #e4e4e4 0%,#e4e4e4 10%,#fff 10%,#fff 20%,#e4e4e4 20%,#e4e4e4 30%,#fff 30%,#fff 40%,#e4e4e4 40%,#e4e4e4 50%,#fff 50%,#fff 60%,#e4e4e4 60%,#e4e4e4 70%,#fff 70%,#fff 80%,#e4e4e4 80%,#e4e4e4 90%,#fff 90%,#fff 100%); /* Chrome10+,Safari5.1+ */
+    background-image:-o-linear-gradient(top, #e4e4e4 0%,#e4e4e4 10%,#fff 10%,#fff 20%,#e4e4e4 20%,#e4e4e4 30%,#fff 30%,#fff 40%,#e4e4e4 40%,#e4e4e4 50%,#fff 50%,#fff 60%,#e4e4e4 60%,#e4e4e4 70%,#fff 70%,#fff 80%,#e4e4e4 80%,#e4e4e4 90%,#fff 90%,#fff 100%); /* Opera 11.10+ */
+    background-image:-ms-linear-gradient(top, #e4e4e4 0%,#e4e4e4 10%,#fff 10%,#fff 20%,#e4e4e4 20%,#e4e4e4 30%,#fff 30%,#fff 40%,#e4e4e4 40%,#e4e4e4 50%,#fff 50%,#fff 60%,#e4e4e4 60%,#e4e4e4 70%,#fff 70%,#fff 80%,#e4e4e4 80%,#e4e4e4 90%,#fff 90%,#fff 100%); /* IE10+ */
+    background-image:-linear-gradient(top, #e4e4e4 0%,#e4e4e4 10%,#fff 10%,#fff 20%,#e4e4e4 20%,#e4e4e4 30%,#fff 30%,#fff 40%,#e4e4e4 40%,#e4e4e4 50%,#fff 50%,#fff 60%,#e4e4e4 60%,#e4e4e4 70%,#fff 70%,#fff 80%,#e4e4e4 80%,#e4e4e4 90%,#fff 90%,#fff 100%); /* W3C */
+}
+.chart dt,
+.chart dd{
+    position:absolute;
+    width:50px;
+    text-align:center;
+}
+.chart dt{
+    top:100%;
+}
+.chart dd{
+    bottom:0;
+    color:#fff;
+    background-color:#09f;
+}
+
+/*--- AXIS TAILS ---*/
+.chart:before,
+.chart:after{
+    content:"";
+    display:block;
+    position:absolute;
+    width:1px;
+    height:10px;
+    background-color:#999;
+    top:100%;
+    right:100%;
+}
+.chart:after{
+    width:10px;
+    height:1px;
+    top:100%;
+    right:100%;
+}
