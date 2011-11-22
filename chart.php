@@ -25,7 +25,7 @@ class Chart {
 		
 		foreach($data as $key => $val) {
 			$spacing = $total / ($total ^ 2);
-			$left = $spacing + floor((100 / $total) * $i);
+			$left = $spacing + ((100 / $total) * $i);
 			$height = $options['percentage'] ? $val : (($val / $max) * 100);
 			$width = (100 / $total) - ($spacing * 2);
 			$output .= sprintf($bar, $left, $val, $height, $key, $width);
