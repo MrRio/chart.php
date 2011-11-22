@@ -16,14 +16,13 @@
 		<?php
 		require_once 'chart.php';
 		echo Chart::bar(array(
-			'Ben' => 50,
-			'Bill' => 25,
-			'Jeff' => 75,
-			'Gill' => 37,
-			'Sarah' => 82,
-			'Phil' => 11,
-			'Steve' => 90,
-			'Lil' => 34
+			'Ben1' => 50,
+			'Ben2' => 50,
+			'Ben4' => 50,
+			'Ben5' => 50,
+			'Ben6' => 50,
+			'Ben7' => 50,
+
 		), array('percentage' => true));
 
 		?>

@@ -9,8 +9,8 @@ class Chart {
 		}
 		
 		$bar = 
-			'<dt style="left:%1$s%%; right: %5$s%%;">%4$s</dt>' .
-			'<dd style="left:%1$s%%; right: %5$s%%; height:%3$s%%;">%2$s</dd>';
+			'<dt style="left:%1$s%%; width: %5$s%%;">%4$s</dt>' .
+			'<dd style="left:%1$s%%; width: %5$s%%; height:%3$s%%;">%2$s</dd>';
 		
 		$wrap = '<dl class=chart>%s</dl>';
 		
@@ -24,10 +24,11 @@ class Chart {
 		$total = count($data);
 		
 		foreach($data as $key => $val) {
-			$left = 3 + floor(100 / $total) * $i;
+			$spacing = $total / ($total ^ 2);
+			$left = $spacing + floor((100 / $total) * $i);
 			$height = $options['percentage'] ? $val : (($val / $max) * 100);
-			$right = 100 - $left - floor(100 / $total) + 2;
-			$output .= sprintf($bar, $left, $val, $height, $key, $right);
+			$width = (100 / $total) - ($spacing * 2);
+			$output .= sprintf($bar, $left, $val, $height, $key, $width);
 			$i ++;
 		}
 		return sprintf($wrap, $output);
