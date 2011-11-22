@@ -22,7 +22,7 @@
 			'Gill' => 37,
 			'Sarah' => 82,
 			'Phil' => 11,
-			'Steve' => 60,
+			'Steve' => 90,
 			'Lil' => 34
 		), array('percentage' => true));
 

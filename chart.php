@@ -16,14 +16,16 @@ class Chart {
 		
 		$output = '';
 		$max = max($data);
+		if($options['percentage'] && $max > 100) {
+			trigger_error("The maximum value for a percentage based chart is 100.");
+		}
 				
 		$i = 0;
 		$total = count($data);
 		
 		foreach($data as $key => $val) {
 			$left = 3 + floor(100 / $total) * $i;
-			
-			$height = $options['percentage'] ? $val : (($val / $max) * 100);			
+			$height = $options['percentage'] ? $val : (($val / $max) * 100);
 			$right = 100 - $left - floor(100 / $total) + 2;
 			$output .= sprintf($bar, $left, $val, $height, $key, $right);
 			$i ++;
