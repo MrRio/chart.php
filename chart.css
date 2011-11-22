@@ -158,7 +158,6 @@ a{
 .chart dt,
 .chart dd{
     position:absolute;
-    width:50px;
     text-align:center;
 }
 .chart dt{

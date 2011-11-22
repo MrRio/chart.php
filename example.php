@@ -19,7 +19,11 @@
 			'Beers' => 10,
 			'JD and Coke' => 7,
 			'Shots' => 21,
-			'Other' => 42
+			'Other' => 42,
+			'Whisky' => 60,
+			'Wine' => 43,
+			'Cider' => 21,
+			'Martini' => 42
 		));
 
 		?>
